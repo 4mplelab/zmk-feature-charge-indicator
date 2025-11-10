@@ -10,7 +10,7 @@ A ZMK feature module to indicate battery charging status on an RGB LED, designed
   <summary>Short video demo</summary>
   See below video for a short demo, charging in progress.
 
-
+  https://github.com/user-attachments/assets/bfcb3e25-f645-47b0-8549-38c3128ddc15
 </details>
 
 - **Devicetree Driven**: Detects charging via a `chg_stat` node label, making it board-agnostic.
