@@ -2,7 +2,7 @@ menu "Charge Indicator"
 
 config CHARGE_INDICATOR
     bool "Enable charge status LED indicator"
-    default y
+    default n
 
 config CHG_POLICY
     bool "Force off during charging (suppress widget)"
