@@ -14,7 +14,7 @@
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/logging/log.h>
 
-LOG_MODULE_REGISTER(charge_indicator, LOG_LEVEL_INF);
+LOG_MODULE_REGISTER(charge_indicator, CONFIG_ZMK_LOG_LEVEL);
 
 
 /* Devicetree: Resolve charging status input from a chg_stat node via alias.
