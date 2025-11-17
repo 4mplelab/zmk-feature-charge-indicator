@@ -16,23 +16,6 @@
 
 LOG_MODULE_REGISTER(charge_indicator, LOG_LEVEL_INF);
 
-/*
- * Kconfig options:
- * - CONFIG_CHARGE_INDICATOR (bool): Enable/disable this feature module.
- * - CONFIG_CHG_POLICY (bool): y = force LEDs OFF while charging (suppress widget),
- *                             n = show configured color while charging (suppress widget).
- * - CONFIG_CHG_COLOR (int, 0..7): Charging color code; default 1 (Red).
- *   Mapping: 0 Black(off), 1 Red, 2 Green, 3 Yellow(R+G), 4 Blue, 5 Magenta(R+B), 6 Cyan(G+B), 7 White(R+G+B).
- */
-#ifndef CONFIG_CHARGE_INDICATOR
-#define CONFIG_CHARGE_INDICATOR 1
-#endif
-#ifndef CONFIG_CHG_POLICY
-#define CONFIG_CHG_POLICY 0
-#endif
-#ifndef CONFIG_CHG_COLOR
-#define CONFIG_CHG_COLOR 1
-#endif
 
 /* Devicetree: Resolve charging status input from a chg_stat node via alias.
  * DT must provide:
